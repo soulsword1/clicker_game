@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background-image: url("/images/start_page.jpg");
+  background-image: url("../images/start_page.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
@@ -156,10 +156,6 @@ p {
 
 /* GAME PAGE */
 body {
-  font-family: "Alkatra", cursive;
-  background-size: cover;
-  background-repeat: no-repeat;
-
   color: #e7eb7a;
 
   -webkit-transition: background-image 1s cubic-bezier(0.4, 0, 0.2, 1);

@@ -15,7 +15,6 @@ function changePage(e) {
     userDetails.username = formEl.elements.username.value;
     userDetails.email = formEl.elements.email.value;
     localStorage.setItem("userDetails", JSON.stringify(userDetails));
-    console.log(userDetails);
     window.location.href = "game.html";
     return;
   }

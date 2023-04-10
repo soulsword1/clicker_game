@@ -13,6 +13,7 @@ const announceEl = document.querySelector(".announce");
 const announceBtnEl = document.querySelector(".announce_button");
 const levelupImgEl = document.querySelector(".levelup_img");
 const backdropEl = document.querySelector(".backdrop");
+const audioEl = document.querySelector(".audio");
 
 //Show username
 const { username } = userDetails;
@@ -85,7 +86,7 @@ function changeImg() {
   img += 1;
   const imgUrl = monsters[img].url;
   const backgroundUrl = monsters[img].background_url;
-  monsterImgEl.setAttribute("src", imgUrl);
+  monsterImgEl.src = imgUrl;
   changeBackground(backgroundUrl);
   increaseAmountOfCoins();
 }
@@ -97,7 +98,6 @@ function changeBackground(background) {
   bodyEl.style.background = backgroundUrl;
   bodyEl.style.backgroundRepeat = "no-repeat";
   bodyEl.style.backgroundSize = "cover";
-  console.log(bodyEl.style)
 }
 
 //Increasing amount of coins
@@ -121,6 +121,7 @@ function victoryNotification() {
   announceBtnEl.addEventListener("click", playAgain);
   announceBtnEl.textContent = "Play again";
   backdropEl.classList.remove("hidden");
+  audioEl.src = "./audio/victory.mp3";
   announceEl.textContent = `I can't believe it ! Our hope, You, actually wasn't in vain.
   Our lands are no longer under the threat of attack by dark forces.
   I can't even find the words to thank you! Now we can live without fear for tomorrow. 
@@ -136,9 +137,10 @@ function playAgain() {
   coins = 0;
   img = 0;
   beginTheGame();
+  audioEl.src = "./audio/battle.mp3";
   const imgUrl = monsters[img].url;
   const backgroundUrl = monsters[img].background_url;
-  monsterImgEl.setAttribute("src", imgUrl);
+  monsterImgEl.src = imgUrl;
   changeBackground(backgroundUrl);
   monsterImgEl.addEventListener("click", countClicks);
 }

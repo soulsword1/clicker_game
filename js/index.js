@@ -10,6 +10,7 @@ function changePage(e) {
   e.preventDefault();
   if (
     formEl.elements.username.value.trim() !== "" &&
+    formEl.elements.email.value.trim() !== "" &&
     formEl.elements.checkbox.checked
   ) {
     userDetails.username = formEl.elements.username.value;

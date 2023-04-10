@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("/images/start_page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  font-family: "Alkatra", cursive;
+  color: #ffff99;
+}
+
+p {
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.invalid {
+  color: #fa8b02;
+  text-align: center;
+  font-size: 16px;
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  margin: 0 auto;
+  border: 2px solid #ffffcc;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.order-form__input {
+  width: 100%;
+  height: 40px;
+
+  margin-bottom: 10px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: #8a8a5c;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form__input:focus-within {
+  outline: none;
+  border: 1px solid #8a8a5c;
+}
+
+.order-form__thumb {
+  position: relative;
+}
+
+.order-form__png {
+  position: absolute;
+  top: 20%;
+  left: 14.27px;
+}
+
+.order-form__conditions {
+  margin-bottom: 30px;
+}
+
+.order-form__link {
+  color: #6602e8;
+  margin-left: 4px;
+}
+
+.agreement {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.16;
+}
+
+.agreement__label {
+  display: flex;
+  align-items: center;
+}
+
+.agreement__checkbox {
+  position: absolute;
+  visibility: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.agreement__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8.38px;
+  border: 2px solid #ffff99;
+  border-radius: 2px;
+}
+
+.agreement__checkbox:checked + .agreement__icon {
+  background-color: #8a8a5c;
+  border-color: transparent;
+  background-image: url("../images/check.svg");
+  background-size: contain;
+  background-origin: border;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-form__btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  cursor: pointer;
+  background: #8a8a5c;
+  color: #ffffcc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form__btn:hover {
+  background: #ffffcc;
+  color: #8a8a5c;
+}
+
+/* GAME PAGE */
+body {
+  font-family: "Alkatra", cursive;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #e7eb7a;
+
+  -webkit-transition: background-image 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.score-header {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #ffff99;
+}
+
+.monsterImg {
+  display: block;
+  margin: 200px auto 0 auto;
+  cursor: url("../images/sword.png"), pointer;
+}
+
+.username-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 30px 0 0;
+
+  font-size: 25px;
+  box-shadow: 0px 2px 0px rgba(102, 2, 232, 0.4);
+}
+
+.levelup_img {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+}
+
+.levelup_img_appear {
+  transform: translateY(-110px) scale(1.25);
+  opacity: 0;
+  transition: transform 500ms linear, scale 500ms linear, opacity 700ms linear;
+}
+
+.slash {
+  cursor: url("../images/wound.png"), pointer;
+}
+
+.imgBg {
+  position: relative;
+}
+
+.backdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+.announce {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 450px;
+  padding: 40px 5px 0 40px;
+  background: url("../images/scroll.png");
+  background-size: cover;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #525237;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.announce_button {
+  display: block;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+
+  cursor: url("../images/sword.png"), pointer;
+  background: #8a8a5c;
+  color: #ffffcc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  text-align: center;
+  transform: translate(-30%, -10%);
+}
+
+.announce_button:hover {
+  background: #ffffcc;
+  color: #8a8a5c;
+}

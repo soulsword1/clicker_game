@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;700&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="score-header">
+      <p>Score: <span class="score"></span><img src="./images/score.png" alt="score" width="30" height="30"></p>
+      <p>Level: <span class="lvl"></span><img src="./images/level.png" alt="level" width="30" height="30"></p>
+      <p>Coins:  <span class="coins"></span><img src="./images/coin.png" alt="coin" width="25" height="25"></p>
+      
+    </div>
+    <div class="username-field"><span class="coins"></span><img src="./images/user_warrior.png" alt="warrior" width="25" height="25"> <span class="username"></span></div>
+    <!-- <h1>Your score is <span class="score"></span> </h1> -->
+    <div class="imgBg">
+    <img alt="Drakedog" class="monsterImg hidden" src="./images/drakedog.png" width="400" height="400">
+    <img class="levelup_img hidden" src="./images/level_up.png" alt="" width="50" height="50">
+  </div>
+
+  <div class="backdrop">
+    <p class="announce">Hey, traveller. Welcome to our kingdom Avalon !
+      Yes, it's not the best time we have here. After the dark lord was released a lot of his henchmen 
+      roam our lands. Cities are under constant siege, villages barely survive, many residents were taken away to who knows where.
+      But I still can see hope, I feel that you have the power to change things. Will you try to restore peece at our lands...
+       </p>
+    <button class="announce_button" type="button">Begin</button>
+  </div>
+    <script type="module" src="./js/game.js"></script>
+  </body>
+</html>

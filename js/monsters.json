@@ -1,0 +1,7 @@
+[
+  { "id":1, "name": "Drakedog", "url": "./images/drakedog.png", "background_url": "./images/drakedog_background.jpg", "coins": 17 },
+  { "id":2, "name": "BWerewolf", "url": "./images/werewolf.png", "background_url": "./images/werewolf_background.jpg", "coins": 35 },
+  { "id":3, "name": "Swamp King", "url": "./images/swamp_king.png", "background_url": "./images/swamp_king_background.jpg", "coins": 105 },
+  { "id":4, "name": "Dragon", "url": "./images/dragon.png", "background_url": "./images/dragon_background.jpg", "coins": 212 }
+]
+

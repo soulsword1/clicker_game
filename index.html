@@ -69,15 +69,9 @@
         <button class="order-form__btn" type="submit">Embark</button>
       </form>
     </div>
-    <embed
-    class="audio"
-    src="./audio/start_menu.mp3"
-    type="audio/mp3"
-    loop="true"
-    autostart="true" volume="100"
-    width="0"
-    height="0"
-  />
+    <audio autoplay loop  id="playAudio">
+      <source src="./audio/start_menu.mp3">
+  </audio>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

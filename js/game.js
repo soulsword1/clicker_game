@@ -94,7 +94,6 @@ function changeImg() {
 //Changing background image
 function changeBackground(background) {
   const backgroundUrl = `url("${background}")`;
-  bodyEl.style.backgroundPositionY = "-100px";
   bodyEl.style.background = backgroundUrl;
   bodyEl.style.backgroundRepeat = "no-repeat";
   bodyEl.style.backgroundSize = "cover";

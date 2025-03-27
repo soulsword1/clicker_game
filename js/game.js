@@ -1,3 +1,4 @@
+import monsters from "./monsters.json";
 import monsters from "./monsters.json" assert { type: "json" };
 
 //Saving user details
